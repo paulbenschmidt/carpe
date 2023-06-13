@@ -1,34 +1,35 @@
----
-layout: default
----
-
-<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Carpe</title>
+    <link href="style.css" rel="stylesheet">
 </head>
-<body>
-    <div class="main">
+<body class="body">
 
-        <div class="header">
-            <h1>Carpe</h1>
+    <div class="header">
+        <div class="crop-image">
+            <img src="img_lights.jpg" alt="Lights" id="img_lights" width="100%">
         </div>
+        <h1>Carpe</h1>
+    </div>
 
+    <div class="main">
         <div class="context">
             <p>This project was born with a simple aim: to help people achieve the things that matter most to them.</p>
             <p>
                 If there is a goal that you're interested in achieving, we want to hear about it. If you want
                 help along the way, then we definitely want to hear about it.
             </p>
-            <p>Whether small or superhuman, goal by goal, build a life to love.</p>
+            <p>Whether small or superhuman, goal by goal, build a life you love.</p>
         </div>
 
         <br>
 
         <div class="response">
             <form action="https://formspree.io/f/xyyaqqpb" method="post"> <!-- Form created on formspree -->
-                <label for="category">Choose goal category</label>
+                <label for="category">
+                    <p>Choose goal category</p>
+                </label>
                 <br>
                 <select name="category">
                     <option value=""></option>
@@ -42,25 +43,25 @@ layout: default
                 </select>
                 <br>
                 <label>
-                    What do you want to achieve?
+                    <p>What do you want to achieve?</p>
                     <br>
                     <input type="text" name="description">
                 </label>
                 <br>
                 <label>
-                    When do you want to achieve this by?
+                    <p>When do you want to achieve this by?</p>
                     <br>
                     <input type="date" name="date">
                 </label>
                 <br>
                 <label>
-                    Want help achieving this goal?
+                    <p>Want help achieving this goal?</p>
                     <br>
                     <input type="checkbox" name="help" value="Yes">
                 </label>
                 <br>
                 <label>
-                    Your email
+                    <p>Your email</p>
                     <br>
                     <input type="email" name="email">
                 </label>
@@ -72,9 +73,11 @@ layout: default
 
         <br>
 
-        <div class="footer">
-            <p><a href="http://www.feedback.io">Feedback</a></p> <!-- TODO: Update link! -->
-            <p>Carpe is a project by <a href="http://www.paulschmidt.io">Paul</a></p> <!-- TODO: Create personal page! -->
-        <div></div>
     </div>
+
+    <div class="footer">
+        <!-- <p><a href="http://www.feedback.io">Feedback</a></p> TODO: Add feedback link! -->
+        <p>Carpe is a project by Paul</p> <!-- TODO: Create personal page! -->
+    <div></div>
+
 </body>

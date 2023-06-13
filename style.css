@@ -1,7 +1,52 @@
+
+.body {
+    background-color: black;
+}
+
+.header {
+    text-align: center;
+    background-color: red;
+}
+
+.crop-image {
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.crop-image img {
+    width: 100%;
+    object-fit: contain;
+    object-position: 0 -300px;
+}
+
+.header h1 {
+    margin-top: -4%;
+}
+
 .main {
-    width: 60%;
+    width: 50%;
     text-align: center;
     margin: auto;
-    border: 3px solid green;
     padding: 10px;
+}
+
+h1 {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.footer {
+    text-align: center;
 }
