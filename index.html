@@ -16,6 +16,7 @@
     </div>
 
     <div class="main">
+        <p id="get-url-placeholder"></p>
         <div class="context">
             <p>This project was born with a simple aim: to help people achieve the things that matter most to them.</p>
             <p>
@@ -69,6 +70,7 @@
                 </label>
                 <br>
                 <input type="hidden" id="get-url" name="url" value="">
+                <input type="hidden" id="get-url-placeholder" name="url-test" value="">
                 <br>
                 <input type="submit" value="Submit" />
             </form>
@@ -88,4 +90,5 @@
 <script>
     // document.getElementById("get-url").innerHTML = window.location.href;
     document.getElementById('get-url').value = window.location.href;
+    document.getElementById('get-url-placeholder').innerHTML = window.location.href;
 </script>
