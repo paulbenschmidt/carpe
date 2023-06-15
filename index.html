@@ -1,4 +1,6 @@
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <title>Carpe</title>
@@ -14,6 +16,7 @@
     </div>
 
     <div class="main">
+        <p id="get-url"></p>
         <div class="context">
             <p>This project was born with a simple aim: to help people achieve the things that matter most to them.</p>
             <p>
@@ -66,6 +69,7 @@
                     <input type="email" name="email">
                 </label>
                 <br>
+                <input type="hidden" id="get-url" name="url" value="">
                 <br>
                 <input type="submit" value="Submit" />
             </form>
@@ -81,3 +85,7 @@
     <div></div>
 
 </body>
+
+<script>
+    document.getElementById("get-url").innerHTML = window.location.href;
+</script>
