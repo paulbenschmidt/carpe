@@ -3,16 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- For mobile responsiveness -->
     <title>Carpe</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="style-v3.css" rel="stylesheet">
 </head>
 <body class="body">
 
     <div class="header">
+        <div class="white-gradient"></div>
         <div class="crop-image">
-            <img src="img_lights.jpg" alt="Lights" id="img_lights" width="100%">
+            <img src="img_dark_mountains.jpeg" alt="Mountains" id="img_dark_mountains">
+            <!-- <img src="img_lights.jpg" alt="Lights" id="img_lights" width="100%"> -->
         </div>
-        <h1>Carpe</h1>
+        <div class="header-text">
+            <h1>Carpe</h1>
+            <h2>build your life</h2>
+            <div class="diamond-header-border-outer">
+                <div class="diamond-header-border-inner"></div>
+            </div>
+        </div>
+        <div class="black-gradient"></div>
     </div>
 
     <div class="main">
@@ -26,46 +36,40 @@
         </div>
 
         <br>
+        <br>
+        <br>
+        <br>
 
         <div class="response">
             <form action="https://formspree.io/f/xyyaqqpb" method="post"> <!-- Form created on formspree -->
                 <label for="category">
                     <p>Choose goal category</p>
                 </label>
-                <br>
-                <select name="category" required>
+                <select class="input-select" id="form-input-category" name="category" required>
                     <option value=""></option>
-                    <option value="athletics">Athletics</option>
                     <option value="career">Career</option>
                     <option value="creative">Creative</option>
                     <option value="intelligence">Intelligence</option>
                     <option value="financial">Financial</option>
+                    <option value="fitness">Fitness</option>
                     <option value="social">Social</option>
                     <option value="spiritual">Spiritual</option>
+                    <option value="other">Other</option>
                 </select>
                 <br>
                 <label>
                     <p>What do you want to achieve?</p>
-                    <br>
-                    <input type="text" name="description" required>
+                    <input class="input-text" id="form-input-description" type="text" name="description" required>
                 </label>
                 <br>
                 <label>
                     <p>When do you want to achieve this by?</p>
-                    <br>
-                    <input type="date" name="date" required>
-                </label>
-                <br>
-                <label>
-                    <p>Want help achieving this goal?</p>
-                    <br>
-                    <input type="checkbox" name="help" value="Yes">
+                    <input type="date" id="form-input-date" name="date" required>
                 </label>
                 <br>
                 <label>
                     <p>Your email</p>
-                    <br>
-                    <input type="email" name="email">
+                    <input class="input-text" id="form-input-email" type="email" name="email" required>
                 </label>
                 <br>
                 <input type="hidden" id="form-get-url" name="url" value="">
@@ -75,12 +79,13 @@
         </div>
 
         <br>
+        <br>
 
     </div>
 
     <div class="footer">
         <!-- <p><a href="http://www.feedback.io">Feedback</a></p> TODO: Add feedback link! -->
-        <p>Carpe is a project by Paul</p> <!-- TODO: Create personal page! -->
+        <p>Carpe is a project by Paul Schmidt</p> <!-- TODO: Create personal page! -->
     <div></div>
 
 </body>
