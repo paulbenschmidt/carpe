@@ -51,7 +51,7 @@
     display: flex;
     width: 45vw;
     height: 45vw;
-    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
     justify-content: center;
     align-items: center;
     border: 1.5px solid white;
@@ -140,25 +140,24 @@ input[type="date"]{
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
     .header h1 {
-        color: black;
-        font-family: "Open Sans", serif;
         font-size: 55px;
-        position: absolute;
-        top: 20%;
-        left: 0;
-        right: 0;
-        margin: auto
     }
 
     .header h2 {
-        color: black;
-        font-family: "Open Sans", serif;
         font-size: 29px;
-        position: absolute;
-        top: 31%;
-        left: 0;
-        right: 0;
-        margin: auto
+    }
+
+    .diamond-header-border-outer {
+        width: 22vw;
+        height: 22vw;
+    }
+
+    .input-select {
+        width: 30%;
+    }
+
+    .input-text {
+        width: 40%;
     }
  }
 
