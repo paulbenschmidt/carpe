@@ -33,18 +33,18 @@
 
 .header h1 {
     position: absolute;
-    top: 30%;
+    top: 33%;
     color: black;
     font-family: "Open Sans", serif;
-    font-size: 45px;
+    font-size: 42px;
 }
 
 .header h2 {
     position: absolute;
-    top: 50%;
+    top: 49.5%;
     color: black;
     font-family: "Open Sans", serif;
-    font-size:18px;
+    font-size: 16px;
 }
 
 .diamond-header-border-outer {
@@ -141,10 +141,12 @@ input[type="date"]{
  @media only screen and (min-width: 992px) {
     .header h1 {
         font-size: 55px;
+        top: 30%;
     }
 
     .header h2 {
         font-size: 29px;
+        top: 47%;
     }
 
     .diamond-header-border-outer {
