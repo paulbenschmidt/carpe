@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+/* TODO: Find out why form does not submit when sent through QR */
+
+.body {
+    background-color: black;
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    margin: 0;
+    width: 100%;
+}
+
+.crop-image {
+    text-align: center;
+    margin-top: 0px;
+    height: 100%;
+}
+
+.crop-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.diamond-header-border-outer {
+    display: flex;
+    position: absolute;
+    top: 17%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    transform: rotate(45deg);
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid white;
+}
+
+.diamond-header-border-inner {
+    width: 84%;
+    height: 84%;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.header h1 {
+    position: relative;
+    color: black;
+    font-family: "Open Sans", serif;
+    font-size: 42px;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+.header h2 {
+    position: relative;
+    color: black;
+    font-family: "Open Sans", serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.black-gradient {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.main {
+    z-index: 1;
+    position: relative;
+    top: 0;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+input[type="date"]{
+    background-color: white;
+    padding: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-select {
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    padding: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-text {
+    width: 90%;
+    text-align: center;
+    background-color: white;
+    padding: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+@media (orientation: landscape) {
+    .crop-image {
+        height: 150%;
+    }
+}
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+    .crop-image {
+        height: 100%;
+    }
+
+    .header h1 {
+        font-size: 55px;
+        top: 30%;
+    }
+
+    .header h2 {
+        font-size: 22px;
+        top: 47%;
+    }
+
+    .diamond-header-border-outer {
+        width: 300px;
+        height: 300px;
+    }
+
+    .input-select {
+        width: 30%;
+    }
+
+    .input-text {
+        width: 40%;
+    }
+ }
